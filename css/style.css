@@ -1,0 +1,807 @@
+/*Шрифты*/
+@font-face {
+    font-family: "Poppins";
+    src: url(../font/Poppins-Black.ttf);
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url(../font/UbuntuCondensed-Regular.ttf);
+}
+
+/*переменные*/
+:root{
+    --bluecolor: rgb(0, 103, 199);
+    --blackbluecolor: rgb(118, 48, 247);
+    --backcolor: rgb(70, 187, 255);
+    --signcolor: rgb(25, 0, 255);
+    --backboxcolor: #F5F5F5;
+    --parcolor: #8F95A5;
+}
+
+/*Для весго сайта*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Шапка сайта*/
+.head{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 40px;
+    background: rgb(195,218,223);
+    background: linear-gradient(90deg, rgba(195,218,223,1) 0%, rgba(60,216,224,1) 64%);
+    margin: 0;
+    z-index: 2;
+    box-shadow: 0px 13px 10px 0px rgba(34, 60, 80, 0.2);
+}
+.logo{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    background: -webkit-linear-gradient(left, black 55%, gray 45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav_search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 5px;
+}
+.nav_sign{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--bluecolor);
+    transition: all 0.2s ease 0s;
+}
+.nav_sign:hover{
+    color: var(--blackbluecolor);
+    font-size: 20px;
+}
+.head_btn{
+    border: 2px solid #263238;
+    border-radius: 5px;
+    width: 160px;
+    height: 50px;
+    margin-bottom: 12px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    background-color: transparent;
+    transition: all 0.2s ease 0.1s;
+}
+.head_btn:hover{
+    background-color: var(--backcolor);
+    font-size: 20px;
+}
+
+/*Первая секция*/
+.before_head{
+    height: 600px;
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.before_head_name{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+}
+.before_head_sign{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--bluecolor);
+}
+.start_btn{
+    border: 0;
+    width: 200px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: var(--blackbluecolor);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: white;
+    transition: all 0.2s ease 0.1s;
+}
+.start_btn:hover{
+    width: 292px;
+    height: 80px;
+    font-size: 24px;
+}
+
+/*Секция Skills*/
+.h_sign{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    background: -webkit-linear-gradient(left, black 45%, gray 55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center; 
+    margin-top: 160px;
+}
+.skills_block{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 900px;
+}
+.speak_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 435px;
+    height: 894px;
+    background-color: var(--backboxcolor);
+    border-radius: 10px;
+    margin-right: 18px;
+}
+.speak_img{
+    width: 390px;
+    height: 390px;
+    padding-left: 23px;
+}
+.box_name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 80px;
+    color: var(--blackbluecolor);
+    padding-left: 43px;
+}
+.box_sign {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--parcolor);
+    padding-left: 43px;
+}
+.box_btn {
+    width: 200px;
+    height: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    border-radius: 5px;
+    background-color: var(--blackbluecolor);
+    color: white;
+    margin-left: 43px;
+    margin-bottom: 108px;
+    border: 0;
+    transition: all 0.2s ease 0.1s;
+}
+.box_btn:hover{
+    width: 230px;
+    height: 60px;
+}
+.wr_rd_ls_box {
+    display: flex;
+    flex-direction: column;
+}
+.wr_rd_container {
+    display: flex;
+    flex-direction: row;
+}
+.wr_rd_box {
+    width: 434px;
+    height: 531px;
+    background-color: var(--backboxcolor);
+    border-radius: 10px;
+    margin-right: 18px;
+}
+.wr_img{
+   margin-left: 122px;
+   width: 293px;
+   height: 293px;
+}
+.rd_img{
+    width: 371px;
+    height: 293px;
+}
+.ls_box{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 48px;
+    padding-right: 25px;
+    width: 885px;
+    height: 343px;
+    background-color: var(--backboxcolor);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.ls_sign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.ls_img{
+    width: 382px;
+    height: 255px;
+}
+
+
+/*Секция about us*/
+.h_sign_about{
+    width: 240px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    background: -webkit-linear-gradient(right, black 40%, gray 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 230px 0 75px 131px;
+}
+.about_block{
+    display: flex;
+    flex-direction: row;
+}
+.business_img{
+    width: 500px;
+    height: 500px;
+    margin-right: 140px;
+}
+.about_box{
+    display: flex;
+    flex-direction: column;
+}
+.about_sign{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--parcolor);
+    padding-left: 131px;
+    padding-bottom: 30px;
+    margin-right: 194px;
+}
+.about_size{
+    display: flex;
+    flex-direction: row;
+}
+.about_size_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 148px;
+}
+.size{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    color: var(--blackbluecolor);
+}
+.size_sign{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--parcolor);
+}
+
+/*Секция Pricing*/
+.pricing{
+    margin-top: 188px;
+}
+.pricing_block{
+    margin-top: 57px;
+}
+.pricing_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pric_img1{
+    width: 311px;
+    height: 311px;
+}
+.pric_img2{
+    width: 391px;
+    height: 283px;
+}
+.pric_img3{
+    width: 340px;
+    height: 340px;
+}
+.price_name{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 48px;
+    color: var(--bluecolor);
+}
+.price_sign{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--parcolor);
+}
+.price_btn{
+    width: 240px;
+    height: 45px;
+    background-color: var(--blackbluecolor);
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    transition: all .2s;
+}
+.price_btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.price_btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.price_btn::after{
+    content: " per month";
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--parcolor);
+}
+
+/*Секция contact us*/
+.contact_block{
+    margin-top: 257px;
+}
+.cont_img{
+    width: 477px;
+    height: 429px;
+}
+.cont_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cont_name{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    background: -webkit-linear-gradient(left, black 8%, gray 92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 280px;
+}
+.cont_sign{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--parcolor);
+}
+.email_box{
+    display: flex;
+    flex-direction: row;
+}
+.enter_em{
+    width: 450px;
+    height: 80px;
+    border: 1px solid var(--parcolor);
+    border-radius: 10px;
+    margin-right: 12px;
+}
+.enter_em[placeholder]{
+    padding-left: 33px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.cont_btn{
+    width: 264px;
+    height: 80px;
+    text-align: center;
+    background: var(--blackbluecolor);
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    border: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+.cont_btn:hover{
+    color: var(--blackbluecolor);
+    background-color: white;
+    border: 1px solid var(--parcolor);
+    transform: translateY(-6px);
+}
+
+
+/*Секция отзывов*/
+.reviews_block{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.add_reviews{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
+}
+.avatar_box{
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+    margin-top: 15px;
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: 4px solid var(--parcolor);
+    border-radius: 50%;
+}
+.create_user{
+    font-size: 140px;
+    color: white;
+    padding-bottom: 15px;
+}
+.color_sign{
+    font-family: "Poppins";
+    font-size: 24px;
+    margin-top: 20px;
+    color: var(--bluecolor);
+}
+.reviews_form{
+    display: flex;
+    flex-direction: column;
+}
+.label_user{
+    font-family: "Poppins";
+    font-size: 24px;
+    color: var(--bluecolor);
+}
+.input_user{
+    width: 200px;
+    height: 30px;
+    border: 1px solid var(--parcolor);
+    border-radius: 10px;
+    padding-left: 33px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.reviews_sign{
+    max-height: 200px;
+    min-height: 200px;
+    font-family: "Ubuntu";
+    font-size: 24px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.submit_reviews{
+    width: 240px;
+    height: 45px;
+    background-color: var(--blackbluecolor);
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 45px;
+    transition: all .2s;
+    margin-left: 50px;
+}
+.submit_reviews:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.submit_reviews:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.reviews{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 120px;
+}
+.user_reviews_block{
+    width: 50%;
+    min-height: 150px;
+    max-height: fit-content;
+    border: 2px solid var(--parcolor);
+    margin-left: 165px;
+    margin-bottom: 60px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+}
+.avatar_mini{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 4px solid var(--parcolor);
+    border-radius: 50%;
+    margin-left: 155px;
+    margin-top: -20px;
+    font-size: 68px;
+    padding-bottom: 10px;
+    box-shadow: 8px 8px 10px 0px rgba(34, 60, 80, 0.2);
+}
+.username{
+    padding: 10px 0 10px 100px;
+    font-family: "Poppins";
+    font-size: 25px;
+}
+.username_text{
+    position: relative;
+    padding-left: 120px;
+    font-family: "Ubuntu";
+    font-size: 20px;
+}
+.delete_review{
+    font-size: 26px;
+    position: absolute;
+    color: var(--parcolor);
+    margin-left: 1085px;
+    margin-top: -5px;
+    transition: color .3s;
+}
+.delete_review:hover{
+    color: red;
+    cursor: pointer;
+}
+.accordion_box{
+    display: none;/*flex*/
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px;
+    background-color: var(--blackbluecolor);
+    justify-content: center;
+    align-items: center;
+    margin-left: 600px;
+    margin-top: -100px;
+    transition: all .4s;
+}
+.accordion_box:hover{
+    transform:translateY(-3px) ;
+    background-color: var(--bluecolor);
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 8px rgba(1, 12, 20, 0.4);;
+}
+.accordion{
+    width: 0;
+	height: 0;
+	border-width: 0 15px 30px 15px;
+	border-color: transparent transparent white transparent;
+	border-style: solid;
+    transition: all .1s;
+}
+.accordion:active{
+    width: 0;
+	height: 0;
+	border-width: 30px 15px 0 15px;
+	border-color: white transparent transparent transparent;
+	border-style: solid;
+}
+
+/*Footer сайта*/
+.foot{
+    width: 100%;
+    height: 200px;
+    background: rgb(195,218,223);
+    background: linear-gradient(90deg, rgba(195,218,223,1) 0%, rgba(60,216,224,1) 64%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_line{
+    height: 2px;
+    width: 80%;
+    background-color: var(--parcolor);
+    margin: 0 auto;
+}
+.logo_foot{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    background: -webkit-linear-gradient(left, black 55%, gray 45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 40px;
+}
+.foot_sign{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin-right: 40px;
+    color: var(--parcolor);
+}
+/*Выплывающая форма*/
+.form_box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    box-shadow: 4px 7px 13px 17px rgba(34, 60, 80, 0.2);
+    background-color: white;
+    width: 30%;
+    height: 80%;
+    overflow: hidden;
+    text-align: end;
+    transform: translate(250%,-250%);
+    transition: all .5s;
+    opacity: 0;
+}
+.start_animation{
+    opacity: 1;  
+    transform: translate(-50%, -50%);
+}
+.close_btn{
+    font-size: 36px;
+    color: red;
+    transition: all .2s ease-in-out 0s;
+    text-align: center;
+}
+.close_btn:hover{
+    font-size: 40px;
+    cursor: pointer;
+}
+.line{
+    background-color: var(--parcolor);
+    width: 100%;
+    height: 2px;
+    margin: 0 auto;
+}
+.form{
+    display: none; /*Здесь должен быть flex*/
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+.form_label{
+    font-size: 20px;
+    font-family: "Ubuntu";
+    color: var(--bluecolor);
+}
+.input_label{
+    width: 150px;
+    height: 30px;
+    padding-left: 10px;
+    border: var(--parcolor) 1px solid;
+    border-radius: 5px;
+    font-family: "Ubuntu";
+    font-size: 20px;
+}
+.error_input{
+    background-color: red;
+    border: 0;
+}
+.error_label{
+    color: red;
+}
+#name{
+    margin-left: 65px;
+}
+label[for="surname"]{
+    padding-right: 35px;
+}
+#secondname{
+    margin-left: 50px;
+}
+#email{
+    margin-left: 85px;
+}
+#phone{
+    margin-left: 5px;
+}
+.submit{
+    width: 200px;
+    height: 50px;
+    border: 0;
+    background-color: var(--blackbluecolor);
+    color: white;
+    font-family: "Ubuntu";
+    font-size: 24px;
+    border-radius: 10px;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.submit:hover{
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; 
+}
+
+/*Выплывающее окно с видео*/
+.video_box{
+    display: none;/*Должен быть flex*/
+    flex-direction: column;
+    align-items: center;
+}
+.video{
+    margin-top: 50px;
+    width: 80%;
+    height: 300px;
+    border: 4px solid var(--blackbluecolor);
+}
+.video_sign{
+    margin-top: 40px;
+    font-size: 60px;
+    font-family: "Poppins";
+    background-color: var(--blackbluecolor);
+    color: white;
+}
+
+
+
